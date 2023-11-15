@@ -10,7 +10,7 @@ jobs:
       - run:
           name: Run Tests
           command: |
-            # python test_sparse_recommender.py
+            # pytest test_sparse_recommender.py
 
   build_and_push:
     docker:
