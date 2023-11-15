@@ -44,7 +44,7 @@ workflows:
       - test:
           filters:
             branches:
-              only: main
+              only: circleci-project-setup
       - build_and_push:
           filters:
             branches:
