@@ -14,8 +14,8 @@ jobs:
             pytest test_sparse_recommender.py
 
   build_and_push:
-    machine:
-      enabled: true
+    docker:
+      - image: cimg/python:3.8
     steps:
       - checkout
       - setup_remote_docker:
